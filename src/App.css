@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Futura";
+  src: local("Futura"),
+    url("https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css")
+      format("tff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#btnset {
+  text-align: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headingclr {
+  background-color: #d9edf7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#btn1 {
+  background-color: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#btn2 {
+  background-color: #000000;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.attributes {
+  font-size: small;
+  letter-spacing: 2px;
+}
+
+.btn-dark {
+  border: 1px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .col-md-border:not(:last-child) {
+    border-right: 1px solid #d7d7d7;
   }
-  to {
-    transform: rotate(360deg);
+  .col-md-border + .col-md-border {
+    border-left: 1px solid #d7d7d7;
+    margin-left: -1px;
   }
 }
